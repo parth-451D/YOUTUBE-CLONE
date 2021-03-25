@@ -15,13 +15,17 @@
       flex-direction: column;
       align-items: center;
 
-      button {
+      Button {
          padding: 0.5rem;
          border: none;
          border-radius: 5px;
          margin-bottom: 1rem;
          &:focus {
             outline: none;
+         }
+         &:hover{
+            color: white;
+            background-color: rgb(49, 41, 41);
          }
       }
    }

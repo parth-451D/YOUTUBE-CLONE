@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector} from 'react-redux'
 import './loginScreen.scss'
-import {Login} from '../../redux/actions/auth.action'
+import {login} from '../../redux/actions/auth.action'
 import { useHistory } from 'react-router'
 
 const LoginScreen = () => {
@@ -17,10 +17,10 @@ const LoginScreen = () => {
             history.push('/') 
       }
 
-   },[accessToken])
+   },[accessToken, history])
 
    const handeleLogin =() =>{
-      dispatch(Login())
+      dispatch(login())
    }
 
 
@@ -32,7 +32,7 @@ const LoginScreen = () => {
                src='http://pngimg.com/uploads/youtube/youtube_PNG2.png'
                alt=''
             />
-            <button onClick={handeleLogin}>Login With google</button>
+            <button className='login__button'  onClick={handeleLogin}>Login With google</button>
             <p>This Project is made using YOUTUBE DATA API and React</p>
          </div>
       </div>

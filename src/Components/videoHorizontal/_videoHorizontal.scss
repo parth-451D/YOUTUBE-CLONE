@@ -13,6 +13,11 @@
    &__thumbnail {
       width: 100%;
 
+      &-channel{
+         width: 50%;
+         border-radius: 50%;
+      }
+
       &-wrapper {
          width: 100%;
       }
@@ -21,7 +26,7 @@
    &__duration {
       position: absolute;
 
-      bottom: 0.6rem;
+      bottom: 0.5rem;
       right: 1.2rem;
 
       font-size: 0.9rem;
@@ -40,6 +45,10 @@
       // color: #fff;
       letter-spacing: 0.3px;
 
+      @include line-clamp(2);
+   }
+
+   &__desc {
       @include line-clamp(2);
    }
 
@@ -77,9 +86,9 @@
          }
       }
 
-      //   &__desc {
-      //      display: none;
-      //   }
+        &__desc {
+           display: none;
+        }
 
       &__title {
          font-size: 1rem;

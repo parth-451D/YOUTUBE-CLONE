@@ -11,15 +11,14 @@ import {
 } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { log_out } from "../../redux/actions/auth.action";
+import { Link } from "react-router-dom";
 
 const Sidebar = ({ sidebar, handleToggleSidebar }) => {
+  const dispatch = useDispatch();
 
-  const dispatch = useDispatch()
-
-  const logoutHandler = ()=>{
-    dispatch(log_out())
-  }
-
+  const logoutHandler = () => {
+    dispatch(log_out());
+  };
 
   return (
     <nav
@@ -30,10 +29,12 @@ const Sidebar = ({ sidebar, handleToggleSidebar }) => {
         <MdHome size={23} />
         <span>HOME</span>
       </li>
-      <li>
-        <MdSubscriptions size={23} />
-        <span>SUBSCRIPTIONS</span>
-      </li>
+      <Link to="/feed/subscriptions">
+        <li>
+          <MdSubscriptions size={23} />
+          <span>SUBSCRIPTIONS</span>
+        </li>
+      </Link>
       <li>
         <MdThumbUp size={23} />
         <span>LIKED VIDEO</span>
