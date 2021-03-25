@@ -6,6 +6,7 @@ import Video from "../../Components/Video/Video";
 import { getPopularVideos, getVideosByCategory } from "../../redux/actions/video.action";
 import SkeletonVideo from "../../Components/skeletons/SkeletonVideo";
 import InfiniteScroll from "react-infinite-scroll-component";
+import CustomHelmet from "../../Components/CustomHelmet";
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -25,6 +26,7 @@ const HomeScreen = () => {
 
   return (
     <Container>
+        <CustomHelmet  />
       <Categories />
       <InfiniteScroll
             dataLength={videos.length}

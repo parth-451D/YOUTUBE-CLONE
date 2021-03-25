@@ -35,8 +35,8 @@ const ChannelScreen = () => {
                <div className='ml-3 channelHeader__details'>
                   <h3>{snippet?.title}</h3>
                   <span>
-                     {numeral(statistics?.subscriberCount).format('0.a')}
-                     Subscribers
+                     {numeral(statistics?.subscriberCount).format('0.a')} <br/>
+                        Subscribers
                   </span>
                </div>
             </div>

@@ -88,7 +88,7 @@ const VideoHorizontal = ({ video, searchScreen, subScreen }) => {
         <img
           src={medium.url}
           className={`videoHorizontal__thumbnail ${thumbnail}`}
-          wrapperclassName='videoHorizontal__thumbnail-wrapper'
+          wrapperClassName='videoHorizontal__thumbnail-wrapper'
         />
         {isVideo && (
           <span className="videoHorizontal__duration">{_duration}</span>
