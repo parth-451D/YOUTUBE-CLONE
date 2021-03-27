@@ -18,9 +18,14 @@
        background-color: #353946;
        color: #fff;
        letter-spacing: 0.5px;
+       border-radius: 7px;
        &:focus {
           border: none;
           outline: none;
+       }
+       &:hover {
+          color:black;
+          background-color:white;
        }
     }
  }

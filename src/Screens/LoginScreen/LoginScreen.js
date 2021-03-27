@@ -33,7 +33,7 @@ const LoginScreen = () => {
                alt=''
             />
             <button className='login__button'  onClick={handeleLogin}>Login With google</button>
-            <p>This Project is made using YOUTUBE DATA API and React</p>
+            <p>This clone is made using Youtube api and React-Redux</p>
          </div>
       </div>
    )

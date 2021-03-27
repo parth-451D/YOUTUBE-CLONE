@@ -8,9 +8,9 @@ import "./_categories.scss";
 
 const keywords = [
   "All",
-  "King",
+  "Bruno Mars",
   "React js",
-  "Back bench coder",
+  "Coding",
   "Ed sheeran",
   "Jaden Smith",
   "Music",
@@ -23,7 +23,7 @@ const keywords = [
   "Lofi music",
   "Naruto",
   "Playlists",
-  "Mixes",
+  "Jujutsu kaisen",
 ];
 
 const Categories = (value) => {

@@ -5,11 +5,10 @@ import { useDispatch, useSelector } from "react-redux";
 import CustomHelmet from "../../Components/CustomHelmet";
 import VideoHorizontal from "../../Components/videoHorizontal/VideoHorizontal";
 import { getSubscribedChannels } from "../../redux/actions/video.action";
-import "./_subscriptions.scss";
 
 const SubscriptionsScreen = () => {
   const { loading, videos } = useSelector(
-    state => state.subscriptionsChannel
+    (state) => state.subscriptionsChannel
   );
 
   const dispatch = useDispatch();
@@ -20,10 +19,10 @@ const SubscriptionsScreen = () => {
 
   return (
     <Container fluid>
-        <CustomHelmet />
+      <CustomHelmet />
       {!loading ? (
         videos?.map((video) => (
-          <VideoHorizontal video={video} key={video.id} subScreen/>
+          <VideoHorizontal video={video} key={video.id} subScreen />
         ))
       ) : (
         <SkeletonTheme color="#343a40" highlightColor="#3c4147">

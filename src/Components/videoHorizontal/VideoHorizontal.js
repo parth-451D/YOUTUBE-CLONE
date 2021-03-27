@@ -79,7 +79,6 @@ const VideoHorizontal = ({ video, searchScreen, subScreen }) => {
       className="py-2 m-1 videoHorizontal align-items-center"
       onClick={handleClick}
     >
-      {/* //TODO refractor grid */}
       <Col
         xs={6}
         md={searchScreen || subScreen ? 4 : 6}
@@ -87,6 +86,7 @@ const VideoHorizontal = ({ video, searchScreen, subScreen }) => {
       >
         <img
           src={medium.url}
+          alt=""
           className={`videoHorizontal__thumbnail ${thumbnail}`}
           wrapperClassName='videoHorizontal__thumbnail-wrapper'
         />

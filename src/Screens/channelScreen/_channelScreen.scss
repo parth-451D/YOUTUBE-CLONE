@@ -12,12 +12,16 @@
    }
    button {
       text-transform: uppercase;
-      background-color: red;
+      background-color: gray;
       color: #fff;
       font-size: 1rem;
       padding: 0.4rem;
       border: none;
+      &:hover{
+         background-color: rgb(219, 49, 49);
+      }
    }
+
 }
 
 @media (max-width: $breakpoint-medium) {
