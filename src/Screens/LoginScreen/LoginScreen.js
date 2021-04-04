@@ -34,6 +34,7 @@ const LoginScreen = () => {
             />
             <button className='login__button'  onClick={handeleLogin}>Login With google</button>
             <p>This clone is made using Youtube api and React-Redux</p>
+            <p>This app does not store your Information</p>
          </div>
       </div>
    )
