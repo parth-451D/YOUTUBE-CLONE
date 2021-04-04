@@ -31,7 +31,7 @@ export const getPopularVideos = () => async (dispatch, getState) => {
         part: "snippet,contentDetails,statistics",
         chart: "mostPopular",
         regionCode: "IN",
-        maxResults: 20,
+        maxResults: 16,
         pageToken: getState().homeVideos.nextPageToken,
       },
     });
@@ -62,7 +62,7 @@ export const getVideosByCategory = (keyword) => async (dispatch, getState) => {
       params: {
         part: "snippet",
 
-        maxResults: 20,
+        maxResults: 16,
         pageToken: getState().homeVideos.nextPageToken,
         q: keyword,
         type: "video",
@@ -121,7 +121,7 @@ export const getRelatedVideos = (id) => async (dispatch) => {
       params: {
         part: "snippet",
         relatedToVideoId: id,
-        maxResults: 20,
+        maxResults: 16,
         type: "video",
       },
     });
@@ -146,7 +146,7 @@ export const getVideosBySearch = (keyword) => async (dispatch) => {
     const { data } = await request("/search", {
       params: {
         part: "snippet",
-        maxResults: 20,
+        maxResults: 16,
         q: keyword,
         type: "video, channel",
       },
@@ -175,7 +175,7 @@ export const getSubscribedChannels = () => async (dispatch, getState) => {
       params: {
         part: "snippet, contentDetails",
         mine: true,
-        maxResults: 15,
+        maxResults: 20,
       },
       headers: {
         Authorization: `Bearer ${getState().auth.accessToken}`,
@@ -215,7 +215,7 @@ export const getVideosByChannel = (id) => async (dispatch) => {
       params: {
         part: "snippet,contentDetails",
         playlistId: uploadPlaylistId,
-        maxResults: 24,
+        maxResults: 20,
       },
     });
 
