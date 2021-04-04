@@ -76,6 +76,7 @@ const VideoHorizontal = ({ video, searchScreen, subScreen }) => {
 
   return (
     <Row
+    
       className="py-2 m-1 videoHorizontal align-items-center"
       onClick={handleClick}
     >
@@ -102,7 +103,7 @@ const VideoHorizontal = ({ video, searchScreen, subScreen }) => {
 
         {isVideo && (
           <div className="videoHorizontal__details">
-            <AiFillEye /> {numeral(views).format("0.a")} Views •
+            <AiFillEye /> {numeral(views).format("0.a")} Views • {" "}
             {moment(publishedAt).fromNow()}
           </div>
         )}

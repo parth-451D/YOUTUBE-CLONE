@@ -59,6 +59,7 @@ const WatchScreen = () => {
         />
       </Col>
       <Col lg={4}>
+      <h1>Up Next</h1>
         {!loading ? (
           videos
             ?.filter((video) => video.snippet)

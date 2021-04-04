@@ -38,16 +38,16 @@ const VideoMetaData = ({ video: { snippet, statistics }, videoId }) => {
         <h5>{title}</h5>
         <div className="d-flex justify-content-between align-items-center py-1">
           <span>
-            {numeral(viewCount).format("0.a")} Views •
+            {numeral(viewCount).format("0.a")} Views • {" "}
             {moment(publishedAt).fromNow()}
           </span>
           <div>
             <span className="mr-3">
-              <MdThumbUp size={26} />
+              <MdThumbUp size={26} />{" "}
               {numeral(likeCount).format("0.a")}
             </span>
             <span className="mr-3" >
-              <MdThumbDown size={26} />
+              <MdThumbDown size={26} />{" "}
               {numeral(dislikeCount).format("0.a")}
             </span>
           </div>
@@ -64,7 +64,7 @@ const VideoMetaData = ({ video: { snippet, statistics }, videoId }) => {
           <div className="d-flex flex-column">
             <span>{channelTitle}</span>
             <span>
-              {numeral(channelStatistics?.subscriberCount).format("0.a")}
+              {numeral(channelStatistics?.subscriberCount).format("0.a")}{" "}
               Subscribers
             </span>
           </div>

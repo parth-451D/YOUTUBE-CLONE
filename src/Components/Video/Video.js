@@ -78,7 +78,7 @@ const Video = ({ video , channelScreen }) => {
         <div className="video__details">
           <span className="mr-1">
             <AiFillEye />
-            {numeral(views).format("0.a")} Views •
+            {numeral(views).format("0.a")} Views • {" "}
           </span>
           <span>{moment(publishedAt).fromNow()}</span>
         </div>
